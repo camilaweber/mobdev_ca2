@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" defaultHref="/tabs/characters">
+      <ion-back-button defaultthref="/tabs/characters"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ character?.name }}</ion-title>
+</ion-header>
+<ion-content padding>
+  <ion-card class="movie-card">
+    <ion-card-header>Name {{ character.name }}: {{ episode.episode }}</ion-card-header>
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="character" slot="start"></ion-icon>
+      Director: {{ episode.season }}
+    </ion-item>
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="calendar" slot="start"></ion-icon>
+      Birthday: {{ character.birthday }}
+    </ion-item>
+  </ion-card>
+</ion-content>
