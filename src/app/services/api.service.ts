@@ -8,11 +8,11 @@ export class ApiService {
     constructor(private http: HttpClient) { }
 
     // getEpisodes() {
-    //     return this.http.get(`https://www.breakingbadapi.com/api/episodes`)
+    //     return this.http.get(`https://stormy-island-64764.herokuapp.com/assets/episode.json/assets/episodes`)
     // }
 
     getEpisodes() {
-        return this.http.get(`https://stormy-island-64764.herokuapp.com/assets/episode.json/api/episodes`)
+        return this.http.get(`https://www.breakingbadapi.com/api/episodes`)
     }
 
     // getEpisode(id) {
@@ -23,8 +23,12 @@ export class ApiService {
         return this.http.get(`https://breakingbadapi.com/api/episodes/${id}`)
     }
 
+       // getCharacters() {
+    //     return this.http.get(`https://stormy-island-64764.herokuapp.com/assets/episode.json/assets/characters`)
+    // }
+
     getCharacters() {
-        return this.http.get(`https://stormy-island-64764.herokuapp.com/assets/episode.json/api/characters`)
+        return this.http.get(`https://www.breakingbadapi.com/api/characters`)
     }
 
     getCharacter(id) {
